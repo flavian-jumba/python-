@@ -1,19 +1,10 @@
-# children = [12, 14, 15, 12, 13]
+phonenumbers = ['2442526362','2025551212','2545551212','2315551212','2455551212','2315551212']
 
-# total_sum = 0
-
-# length = 0
-
-# for child in children:
-
-#     total_sum += child  # Corrected this line to add the value of 'child'
-    
-#     length += 1
-
-# # Calculate average and print results
-# average = total_sum / length if length > 0 else 0
-# print("The total sum of the children is: " + str(total_sum) + " and the total average is: " + str(average))
-children = [12,2,32,13,134,23]
-for child in range(len(children)):
-    add = child+10
-    print(add) 
+def format_phone (phonenumbers):
+    codes = []
+    for e in phonenumbers:
+        ans = "(" + e[:3] + ")"
+        codes.append(ans)
+    return codes
+area_codes = format_phone(phonenumbers)
+print("The country codes are:",area_codes)
